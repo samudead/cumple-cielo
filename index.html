@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Una pequeña sorpresa para Cielo">
+    <title>Para Cielo 🌼</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="theme-night">
+
+    <!-- =========================
+         PANTALLA DE CARGA
+    ========================== -->
+
+<div id="loading-screen">
+
+    <div class="loading-content">
+
+        <h1>CIELO</h1>
+
+        <p id="loading-text">Iniciando...</p>
+
+        <div class="loading-bar-container">
+            <div id="loading-bar"></div>
+        </div>
+
+        <span id="loading-percentage">0%</span>
+
+    </div>
+
+</div>
+
+
+    <!-- =========================
+         CONTENIDO PRINCIPAL
+    ========================== -->
+
+    <main id="main-content" class="main-content hidden">
+
+        <!-- Decoración -->
+        <div class="web-decoration web-top-left"></div>
+        <div class="web-decoration web-top-right"></div>
+
+        <!-- =========================
+             HERO
+        ========================== -->
+
+        <section class="hero">
+
+            <div class="hero-decoration">
+                ✦
+            </div>
+
+            <p class="eyebrow">UNA PEQUEÑA SORPRESA</p>
+
+            <h1>Para Cielo</h1>
+
+            <p class="hero-subtitle">
+                Una pequeña parte de todo lo que siento por ti.
+            </p>
+
+            <button id="theme-button" class="theme-button">
+                ◐ Cambiar estilo
+            </button>
+
+        </section>
+
+
+        <!-- =========================
+             UNA PEQUEÑA RAZÓN
+        ========================== -->
+
+        <section class="section reason-section">
+
+            <span class="section-symbol">🌼</span>
+
+            <h2>Una pequeña razón</h2>
+
+            <p>
+                Hay muchísimas cosas que me gustan de ti,
+                pero si tuviera que elegir una, sería la
+                tranquilidad que siento cuando estoy contigo.
+            </p>
+
+            <p>
+                Aunque no estemos haciendo nada especial,
+                estar contigo ya hace que cualquier momento
+                sea especial.
+            </p>
+
+        </section>
+
+
+        <!-- =========================
+             NUESTROS MOMENTOS
+        ========================== -->
+
+        <section class="section memories-section">
+
+            <p class="eyebrow">PEQUEÑAS COSAS</p>
+
+            <h2>Nuestros momentos</h2>
+
+            <div class="memory-grid">
+
+                <article class="memory-card">
+                    <span>🌙</span>
+                    <h3>Noches</h3>
+                    <p>
+                        Las noches hablando hasta quedarnos
+                        dormidos en llamada.
+                    </p>
+                </article>
+
+                <article class="memory-card">
+                    <span>🎮</span>
+                    <h3>Juegos</h3>
+                    <p>
+                        Las noches jugando juntos y que te quedaras un rato
+                        mas conmigo incluso si tenias sueño.
+                    </p>
+                </article>
+
+                <article class="memory-card">
+                    <span>🥋</span>
+                    <h3>Campeonatos</h3>
+                    <p>
+                        Que estuvieras conmigo incluso cuando ni si quiera
+                        competi.
+                    </p>
+                </article>
+
+                <article class="memory-card">
+                    <span>❤️</span>
+                    <h3>Nosotros</h3>
+                    <p>
+                        Todos esos momentos pequeños que para
+                        mí significan muchísimo.
+                    </p>
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             ARAÑA
+        ========================== -->
+
+<section class="section spider-section">
+
+    <p class="eyebrow">ALGO SE ESTÁ MOVIENDO...</p>
+
+    <h2>Parece que algo quiere recordarte lo mucho que te amo.</h2>
+
+    <div id="spider-area" class="spider-area">
+
+        <!-- Telaraña -->
+        <svg
+            id="web-svg"
+            class="web-svg"
+            viewBox="0 0 1000 500"
+            preserveAspectRatio="none"
+            aria-hidden="true"
+        >
+            <g id="web-lines"></g>
+        </svg>
+
+        <!-- Hilo de la araña -->
+        <div id="spider-thread"></div>
+
+        <!-- Araña -->
+        <button
+            id="spider"
+            class="spider"
+            type="button"
+            aria-label="Araña misteriosa"
+        >
+            <svg
+                class="spider-svg"
+                viewBox="0 0 100 120"
+                xmlns="http://www.w3.org/2000/svg"
+                aria-hidden="true"
+            >
+                <defs>
+                    <radialGradient id="body-shine" cx="38%" cy="32%" r="55%">
+                        <stop offset="0%"   stop-color="#3a3a3a"/>
+                        <stop offset="100%" stop-color="#080808"/>
+                    </radialGradient>
+                    <radialGradient id="abd-shine" cx="35%" cy="28%" r="60%">
+                        <stop offset="0%"   stop-color="#2e2e2e"/>
+                        <stop offset="100%" stop-color="#060606"/>
+                    </radialGradient>
+                </defs>
+
+                <!-- Patas izquierda — codo marcado, puntas afiladas -->
+                <!-- L1 arriba -->
+                <path class="s-leg" d="M 38,38 L 14,18 L 2,4"/>
+                <!-- L2 -->
+                <path class="s-leg" d="M 36,44 L 10,38 L -4,32"/>
+                <!-- L3 -->
+                <path class="s-leg" d="M 36,52 L 12,58 L -2,68"/>
+                <!-- L4 abajo -->
+                <path class="s-leg" d="M 38,58 L 18,76 L 8,96"/>
+
+                <!-- Patas derecha -->
+                <!-- R1 arriba -->
+                <path class="s-leg" d="M 62,38 L 86,18 L 98,4"/>
+                <!-- R2 -->
+                <path class="s-leg" d="M 64,44 L 90,38 L 104,32"/>
+                <!-- R3 -->
+                <path class="s-leg" d="M 64,52 L 88,58 L 102,68"/>
+                <!-- R4 abajo -->
+                <path class="s-leg" d="M 62,58 L 82,76 L 92,96"/>
+
+                <!-- Cefalotórax (cabeza/cuerpo superior) -->
+                <ellipse class="s-body" cx="50" cy="42" rx="14" ry="16" fill="url(#body-shine)"/>
+
+                <!-- Abdomen (más grande y ovalado) -->
+                <ellipse class="s-abdomen" cx="50" cy="72" rx="16" ry="20" fill="url(#abd-shine)"/>
+
+                <!-- Ojos -->
+                <circle class="s-eye" cx="44" cy="37" r="2.2"/>
+                <circle class="s-eye" cx="56" cy="37" r="2.2"/>
+
+                <!-- Pequeños colmillos -->
+                <path class="s-fang" d="M 46,54 L 44,59"/>
+                <path class="s-fang" d="M 54,54 L 56,59"/>
+            </svg>
+        </button>
+
+        <div id="spider-dialog" class="spider-dialog hidden" aria-live="polite"></div>
+
+    </div>
+
+</section>
+
+
+        <!-- =========================
+             JARDÍN
+        ========================== -->
+
+        <section class="section garden-section">
+
+            <p class="eyebrow">PARA TI</p>
+
+            <h2>Un jardín para ti</h2>
+
+            <p>
+                Cada vez que pulses, planta una flor.
+            </p>
+
+            <button id="flower-button" class="flower-button">
+                <span>🌱</span> Plantar una flor
+            </button>
+
+            <div id="garden" class="garden"></div>
+
+            <p id="flower-message" class="flower-message"></p>
+
+        </section>
+
+
+        <!-- =========================
+             GRAND LINE
+        ========================== -->
+
+        <section class="section compass-section">
+
+            <p class="eyebrow">GRAND LINE</p>
+
+            <h2>¿Hacia dónde vamos?</h2>
+
+            <p>
+                Toda buena aventura necesita una brújula.
+            </p>
+
+            <div class="compass-grid">
+
+                <button class="compass-card" data-character="luffy">
+                    <div class="compass">
+                        <div class="compass-needle"></div>
+                    </div>
+
+                    <div class="compass-character">
+                        <img src="luffy_chibi.png" alt="Luffy chibi" />
+                    </div>
+                    <strong>Luffy</strong>
+                </button>
+
+
+                <button class="compass-card" data-character="zoro">
+                    <div class="compass">
+                        <div class="compass-needle"></div>
+                    </div>
+
+                    <div class="compass-character">
+                        <img src="Zoro_chibi.png" alt="Zoro chibi" />
+                    </div>
+                    <strong>Zoro</strong>
+                </button>
+
+
+                <button class="compass-card" data-character="chopper">
+                    <div class="compass">
+                        <div class="compass-needle"></div>
+                    </div>
+
+                    <div class="compass-character">
+                        <img src="Chopper_chibi.png" alt="Chopper chibi" />
+                    </div>
+                    <strong>Chopper</strong>
+                </button>
+
+            </div>
+
+            <p id="compass-message" class="compass-message"></p>
+
+        </section>
+
+
+        <!-- =========================
+             MENSAJE FINAL
+        ========================== -->
+
+        <section class="final-section">
+
+            <div class="final-flower">🌼</div>
+
+            <p>Cielo...</p>
+
+            <p>
+                Gracias por cada llamada.<br>
+                Por cada noche.<br>
+                Por cada juego.<br>
+                Por cada abrazo.<br>
+                Por acompañarme.<br>
+                Por hacerme sentir tranquilo.<br>
+                Por hacerme feliz.
+            </p>
+
+            <h2>Te amo. ❤️</h2>
+
+            <p class="final-small">
+                Feliz Amor y Amistad, mi Cielo perdonma si no te di tus flores amarillas cuando correspondia.
+            </p>
+
+        </section>
+
+
+        <!-- =========================
+             ARCHIVO SECRETO
+        ========================== -->
+
+        <button id="secret-button" class="secret-button">
+            ???
+        </button>
+
+        <div id="secret-message" class="secret-message hidden">
+
+            <p class="secret-title">
+                🔓 ARCHIVO DESBLOQUEADO
+            </p>
+
+            <p>
+                Nombre: Cielo
+            </p>
+
+            <p>
+                Flores generadas:
+                <span id="flower-counter">0</span>
+            </p>
+
+            <p>
+                Arañas encontradas:
+                <span id="spider-found-counter">0</span>
+            </p>
+
+            <p>
+                Brújulas consultadas:
+                <span id="compass-counter">0</span>
+            </p>
+
+            <p class="diagnosis">
+                Nivel de enamoramiento:
+                <br>
+                ████████████████████ 100%
+            </p>
+
+            <p>
+                Diagnóstico:
+                <br>
+                <strong>Irremediablemente enamorado.</strong>
+            </p>
+
+        </div>
+
+    </main>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
